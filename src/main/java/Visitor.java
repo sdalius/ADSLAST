@@ -11,6 +11,7 @@ public class Visitor<AnyType> implements IVisitor {
     }
     public void visit(Operand operand) {
         stack.push((AnyType) operand);
+        System.out.println("Number pushed to stack");
     }
 
     public void visit(Operator operator) {
